@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "infoReminder",
+  "version": "5.5.1",
+  "description": "微博热搜",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "fetch updated top searching event",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "https://d.weibo.com/231650"],
+      "js": ["search.js","myScript.js"]
+    }
+  ],
+  "permissions": ["bookmarks", "tabs", "notifications", "http://*/*", "https://*/*", "storage", "contextMenus"]
+}

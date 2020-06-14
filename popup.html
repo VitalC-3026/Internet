@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微博热搜列表</title>
+<style type="text/css">
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+  }
+  body{
+    width: 350px;
+    background-color: #708090;
+  }
+  .footer{
+    text-align: center;
+  }
+  input{
+    display: block;
+    margin: 10px auto;
+  }
+  .header input[type = "text"]{
+    width: 300px;
+    border-radius: 5px;
+    border-color: transparent;
+  }
+  .header input[type = "button"]{
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #444444;
+    color: #AAAAAA;
+  }
+  hr{
+    width: 300px;
+    margin: 0 auto;
+  }
+  #result{
+    width: 310px;
+    margin: 20px;
+  }
+  #result p{
+    text-align: center;
+  }
+  #result a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 5px;
+    padding-right: 15px;
+    color: black;
+  }
+  #result a:hover{
+    background-color: #6c6c6c;
+    color: white;
+  }
+  .main {
+    display: none;
+  }
+
+</style>
+</head>
+
+<body>
+<div class="header">
+  <img alt="" src="pop.jpg">
+  <input type="text" id="content" placeholder="input to search...">
+  <input type="button" value="search" id="search">
+</div>
+<div id="main">
+  <hr>
+  <div id="result">
+    <p>There is no result now</p>
+  </div>
+</div>
+<div class="footer">
+</div>
+<script src="search.js">
+</script>
+</body>
+</html>
